@@ -21,6 +21,14 @@
         format: new ol.format.GeoJSON(),
         url: 'trails.geojson'
       })
+     trails.setStyle(
+  new ol.style.Style({
+    stroke: new Stroke({
+      color: '#5a5a5a',
+      width: 4,
+    }),
+  })
+) 
     })
       var map = new ol.Map({
         target: 'map',
