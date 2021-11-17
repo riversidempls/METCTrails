@@ -16,12 +16,7 @@
     <h2>Regional Trails from Met Council</h2>
     <div id="map" class="map"></div>
     <script type="text/javascript">
-    var trails = new ol.layer.Vector({
-      source: new ol.source.Vector({
-        format: new ol.format.GeoJSON(),
-        url: 'trails.geojson'
-      })
-      trails.setStyle(
+            trails.setStyle(
   new ol.style.Style({
     stroke: new ol.style.Stroke({
       color: '#5a5a5a',
@@ -29,6 +24,11 @@
     }),
   })
 )
+    var trails = new ol.layer.Vector({
+      source: new ol.source.Vector({
+        format: new ol.format.GeoJSON(),
+        url: 'trails.geojson'
+      })
       })
       var map = new ol.Map({
         target: 'map',
